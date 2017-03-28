@@ -29,7 +29,7 @@
 			</ul>
 			<div id='user'>
 				<span class='user_state'>当前管理员：[<span></span>]权限为<span></span></span>
-				<a href="" target='_self' id='login_out'></a>
+				<a href="{{url('admin/login')}}" target='_self' id='login_out'></a>
 			</div>
 		</div>
 	</div>

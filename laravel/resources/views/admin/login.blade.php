@@ -16,16 +16,15 @@
     <link rel="stylesheet" href="{{asset('admin/css/style.css')}}">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-   <!-- <script src="{{URL::asset('admin/js/supersized-init.js')}}"></script>-->
-    <![endif]-->
+
+
 
 </head>
 
 <body oncontextmenu="return false">
 
 <div class="page-container">
-    <h1>管理员登录</h1>
+    <h1>后台登录</h1>
     <form action="" method="post">
         <div>
             <input type="text" name="username" class="username" placeholder="请输入管理员帐号" autocomplete="off"/>
@@ -33,7 +32,7 @@
         <div>
             <input type="password" name="password" class="password" placeholder="请输入密码" oncontextmenu="return false" onpaste="return false" />
         </div>
-        <button id="submit" type="button">登录</button>
+        <button id="submit" type="button" href="{{url('admin/index1')}}">登录</button>
     </form>
     <div class="connect">
         <p>If we can only encounter each other rather than stay with each other,then I wish we had never encountered.</p>
@@ -53,8 +52,8 @@
 <script src="{{ URL::asset('admin/js/supersized.3.2.7.min.js')}}"></script>
 <script src="{{URL::asset('admin/js/supersized-init.js')}}"></script>
 <script>
-    $(".btn").click(function(){
-        is_hide();
+  $(".btn").click(function(){
+      is_hide();
     })
     var u = $("input[name=username]");
     var p = $("input[name=password]");
@@ -65,7 +64,7 @@
             is_show();
             return false;
         }
-        else{
+        else {
             var reg = /^[0-9A-Za-z]+$/;
             if(!reg.exec(u.val()))
             {
@@ -74,6 +73,7 @@
                 return false;
             }
         }
+
     });
     window.onload = function()
     {
