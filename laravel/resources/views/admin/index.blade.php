@@ -15,21 +15,21 @@
 		<div class='menu'>
 			<ul>
 				<li class='first first_cur'>
-					<a href="{{url('admin/index1')}}"><span>首&nbsp;页</span></a>
+					<a href="{{url('admin/index/index1')}}"><span>首&nbsp;页</span></a>
 				</li>
 				<li class='next'>
-					<a href="{{url('admin/user')}}"><span>用户列表</span></a>
+					<a href="{{url('admin/index/user')}}"><span>用户列表</span></a>
 				</li>
 				<li>
-					<a href="{{url('admin/info')}}"><span>微博列表</span></a>
+					<a href="{{url('admin/index/info')}}"><span>微博列表</span></a>
 				</li>
 				<li class='last'>
-					<a href="{{url('admin/index1')}}"><span>系统信息</span><div></div></a>
+					<a href=""><span>系统信息</span><div></div></a>
 				</li>
 			</ul>
 			<div id='user'>
 				<span class='user_state'>当前管理员：[<span></span>]权限为<span></span></span>
-				<a href="{{url('admin/login')}}" target='_self' id='login_out'></a>
+				<a href="" target='_self' id='login_out'></a>
 			</div>
 		</div>
 	</div>
@@ -38,11 +38,11 @@
 			<div class="nav_u"><span class="pos down">用户管理</span></div>
 		</div>
 		<ul class='option'>
-			<li><a href="{{url('admin/user')}}">微博用户</a></li>
-			<li><a href='{{url('admin/user_search')}}'>微博用户查询</a></li>
-			<li><a href='{{url('admin/admin')}}'>后台管理员</a></li>
+			<li><a href="{{url('admin/index/user')}}">微博用户</a></li>
+			<li><a href='{{url('admin/index/user_search')}}'>微博用户查询</a></li>
+			<li><a href='{{url('admin/index/admin')}}'>后台管理员</a></li>
 
-				<li><a href='{{url('admin/add_admin')}}'>添加管理员</a></li>
+				<li><a href='{{url('admin/index/add_admin')}}'>添加管理员</a></li>
 
 		</ul>
 
@@ -50,29 +50,29 @@
 			<div class="nav_u"><span class="pos down">微博管理</span></div>
 		</div>
 		<ul class='option'>
-			<li><a href='{{url('admin/weibo')}}'>原作微博</a></li>
-			<li><a href='{{url('admin/weibo_repeat')}}'>转发微博</a></li>
-			<li><a href='{{url('admin/weibo_classify')}}'>微博分类</a></li>
-			<li><a href='{{url('admin/weibo_search')}}'>微博检索</a></li>
+			<li><a href='{{url('admin/index/weibo')}}'>原作微博</a></li>
+			<li><a href='{{url('admin/index/weibo_repeat')}}'>转发微博</a></li>
+			<li><a href='{{url('admin/index/weibo_classify')}}'>微博分类</a></li>
+			<li><a href='{{url('admin/index/weibo_search')}}'>微博检索</a></li>
 		</ul>
 		<div class='nav'>
 			<div class="nav_u"><span class="pos down">评论管理</span></div>
 		</div>
 		<ul class='option'>
-			<li><a href='{{url('admin/comment')}}'>评论列表</a></li>
-			<li><a href='{{url('admin/comment_search')}}'>评论检索</a></li>
+			<li><a href='{{url('admin/index/comment')}}'>评论列表</a></li>
+			<li><a href='{{url('admin/index/comment_search')}}'>评论检索</a></li>
 		</ul>
 		<div class='nav'>
 			<div class="nav_u"><span class="pos down">系统设置</span></div>
 		</div>
 		<ul class='option'>
-			<li><a href='{{url('admin/feedback')}}'>问题反馈</a></li>
-			<li><a href='{{url('admin/report')}}'>举报反馈</a></li>
-			<li><a href='{{url('admin/image')}}'>图片审核</a></li>
+			<li><a href=''>关键字过滤</a></li>
+			<li><a href=''>网站设置</a></li>
+			<li><a href=''>修改密码</a></li>
 		</ul>
 	</div>
 	<div id="right">
-		<iframe src="{{url('admin/index1')}}" frameborder="0" name='iframe'>
+		<iframe src="{{url('admin/index/index1')}}" frameborder="0" name='iframe'>
 
 		</iframe>
 	</div>

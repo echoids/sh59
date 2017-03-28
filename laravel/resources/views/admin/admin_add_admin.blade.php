@@ -20,13 +20,13 @@
                 <label for="exampleInputName2">帐号</label>
                 <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入帐号"name="username" value="">
             </div>
-            <br> <br>
+            <br>
 
             <div class="form-group">
                 <label for="exampleInputEmail2" >密码</label>
                 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="请输入密码" name="password" value="">
             </div>
-            <br> <br>
+            <br>
             <div class="dropdown open">
                 <label for="exampleInputName2">权限</label><select>
                    <option>请选择</option>
@@ -34,16 +34,18 @@
                    <option>普通管理员</option>
                </select>
             </div>
-            <br>
+
             <div> <label for="exampleInputName2">登录权限</label>
                 <input type="radio" name="role" value="1">允许
                 <input type="radio" name="role" value="1">禁止
             </div>
             <br>
+            <div>
 
+
+            </div>
 
             <button class="btn btn-primary " type="button">添加</button>
-            <button class="btn btn-primary " type="button">取消</button>
         </div>
 
     </form>
